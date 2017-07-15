@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="994e6f05-372b-44b8-9829-12e1daea7f23" name="UMLClassDiagram1" linkedPackageId="d541dbae-bff9-4cfe-9d2c-df768fc34f7b" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="c8bf9892-d493-49de-99d3-972700696171" name="participation" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="3e19771f-ca66-4be5-8ed9-29cf175267f6" />
+        <suppliersInternal>
+          <dependency Id="a8281e23-5e50-47be-af0f-8d59b4b3822a">
+            <classMoniker Id="e0994b15-f449-43a4-8d3b-a34e2744b182" LastKnownName="Course" />
+            <elementDefinition Id="4c0021ef-5749-46e2-bfa6-1245e6a9a6ed" />
+          </dependency>
+        </suppliersInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="04f5d2e6-f5b7-4ac9-a4e1-d1c982f77a12" name="Competiteur" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="150252e8-1b8b-4a86-bc15-c6f4a1bf8873" />
+        <suppliersInternal>
+          <dependency Id="71bf49b5-bb76-4960-ba93-eba6db99a54d">
+            <classMoniker Id="c8bf9892-d493-49de-99d3-972700696171" LastKnownName="participation" />
+            <elementDefinition Id="8841a61e-e4dc-4ba3-b0b0-2e473ce56aaa" />
+          </dependency>
+        </suppliersInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="e0994b15-f449-43a4-8d3b-a34e2744b182" name="Course" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="d2667f6b-c70e-46f2-be2d-88e507c110fd" />
+        <generalsInternal>
+          <generalization Id="8db2892e-119f-4d9e-99d3-7df25357f4bd" isSubstitutable="false">
+            <classMoniker Id="6cac81e3-3f47-4ad0-9ea1-a8d16f9909a9" LastKnownName="CourseDescente" />
+            <elementDefinition Id="46449db6-5dc2-486b-8cab-a9dc6b85b4a3" />
+          </generalization>
+          <generalization Id="aa91861e-2348-4c20-a34a-25faf01fc231" isSubstitutable="false">
+            <classMoniker Id="ac3ab5bd-9008-4082-9ff8-1264d4b86cab" LastKnownName="CourseSlalom" />
+            <elementDefinition Id="85c5bede-9784-4c13-9ed7-de2744448a1e" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="6cac81e3-3f47-4ad0-9ea1-a8d16f9909a9" name="CourseDescente" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="0cece730-4032-42f3-83d4-d92619c3abf6" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="ac3ab5bd-9008-4082-9ff8-1264d4b86cab" name="CourseSlalom" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="c022e446-4e98-4b5f-8e62-27527ad93bcb" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+  </packagedElements>
+  <package Id="d541dbae-bff9-4cfe-9d2c-df768fc34f7b" name="ModelingProject1">
+    <elementDefinition Id="0e58aee7-421d-4bae-a7bd-c953ecd1c5cb" />
+    <profileInstances>
+      <packageHasProfileInstances Id="6ab58564-7a6d-4bc0-bc8a-ba10d28356fd">
+        <profileInstance Id="273caa8e-cd57-4c03-a238-ed395046e3c3" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="40bcbb59-2ea6-4547-8674-e947538276ba">
+        <profileInstance Id="770cd6ce-7568-49c9-8b70-a7d42fa88042" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</logicalClassDesignerModel>
